@@ -9,6 +9,8 @@ chmod +x "NOM_SCRIPT"
 
 ./"NOM_SCRIPT"
 
+EXPLICATION DU SCRIPT 
+
 #Mettre à jour la liste des paquets
 
 #Installer wget gpg et java
