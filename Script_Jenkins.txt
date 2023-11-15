@@ -1,0 +1,16 @@
+#!/bin/bash
+
+apt update -y
+apt install wget gpg openjdk-11-jdk -y
+wget -O /usr/share/keyrings/jenkins-keyring.asc \
+  https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
+  https://pkg.jenkins.io/debian-stable binary/ | tee \
+  /etc/apt/sources.list.d/jenkins.list > /dev/null
+apt-get update -y
+apt-get install jenkins
+service jenkins start
+echo "Mot de passe d'administration Jenkins :"
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+echo "Script d'installation de Jenkins terminé."
+echo "Vous pouvez accéder à Jenkins à l'adresse http://localhost:8080/"
