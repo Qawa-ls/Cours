@@ -6,6 +6,7 @@ Télécharger Debian 11 : https://lecrabeinfo.net/telecharger/debian-11-64-bits
 Voici le script expliqué, il vous suffira de un copier/coller dans un fichier sur votre debian puis qu'il faudra executer avec faisant les commande suivante :
 
 chmod +x "NOM_SCRIPT"
+
 ./"NOM_SCRIPT"
 
 #Mettre à jour la liste des paquets
